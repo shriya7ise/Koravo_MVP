@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-DB_URL = "postgresql://postgres:tl27bmrpXpFIPotA@db.XXXX.supabase.co:5432/postgres"
+DB_URL = "postgresql://postgres:tl27bmrpXpFIPotA@db.dnhvrscccrydnfnwuelx.supabase.co:5432/postgres"
 INVENTORY_CSV          = "data/inventory.csv"
 SALES_CSV              = "data/sales_transactions.csv"
 FINANCIAL_CSV          = "data/financial_tracking.csv"
