@@ -1,7 +1,10 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+import os
 
-DB_URL = "postgresql://postgres:tl27bmrpXpFIPotA@db.dnhvrscccrydnfnwuelx.supabase.co:5432/postgres"
+load_dotenv()
+DB_URL = os.getenv("DATABASE_URL")
 INVENTORY_CSV          = "data/inventory.csv"
 SALES_CSV              = "data/sales_transactions.csv"
 FINANCIAL_CSV          = "data/financial_tracking.csv"
